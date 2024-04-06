@@ -16,12 +16,10 @@
             text-align: center;
         }
 
-        /* Set width of the first column to be five times the width of all other columns */
         th:first-child, td:first-child {
             width: 100vw;
         }
 
-        /* Set width of all other columns */
         th:not(:first-child), td:not(:first-child) {
             width: 10vw;
         }
