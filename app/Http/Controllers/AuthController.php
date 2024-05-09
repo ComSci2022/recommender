@@ -1,22 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class LoginController extends Controller
+class AuthController extends Controller
 {
-
     public function showLoginForm()
     {
         return view('auth.login');
-    }
-
-    public function username()
-    {
-        return 'user';
     }
 
     public function login(Request $request)
@@ -26,7 +19,7 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
     
-            return redirect()->route('takerscores.index'); // Redirect to the 'takerscores.index' route
+            return redirect()->intended('/');
         }
     
         return back()->withErrors([
@@ -43,5 +36,5 @@ class LoginController extends Controller
         $request->session()->regenerateToken();
     
         return redirect('/');
-    }
+    }    
 }

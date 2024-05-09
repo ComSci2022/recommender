@@ -94,27 +94,27 @@
                 </tr>
                 <tr>
                     <td>AB English Language</td>
-                    <td>49</td>
-                    <td>48</td>
-                    <td>46</td>
-                    <td>44</td>
-                    <td>187</td>
+                    <td>40</td>
+                    <td>25</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>115</td>
                 </tr>
                 <tr>
                     <td>AB Political Science</td>
-                    <td>43</td>
-                    <td>49</td>
-                    <td>46</td>
-                    <td>50</td>
-                    <td>188</td>
+                    <td>35</td>
+                    <td>20</td>
+                    <td>15</td>
+                    <td>25</td>
+                    <td>95</td>
                 </tr>
                 <tr>
                     <td>AB Filipino</td>
-                    <td>43</td>
-                    <td>49</td>
-                    <td>46</td>
-                    <td>50</td>
-                    <td>188</td>
+                    <td>45</td>
+                    <td>20</td>
+                    <td>15</td>
+                    <td>25</td>
+                    <td>105</td>
                 </tr>
             </table>
         </div>
@@ -133,19 +133,19 @@
                 </tr>
                 <tr>
                     <td>BS Computer Science</td>
-                    <td>49</td>
-                    <td>48</td>
-                    <td>46</td>
-                    <td>44</td>
-                    <td>187</td>
+                    <td>25</td>
+                    <td>45</td>
+                    <td>40</td>
+                    <td>35</td>
+                    <td>145</td>
                 </tr>
                 <tr>
                     <td>BS Information Technology</td>
-                    <td>43</td>
-                    <td>49</td>
-                    <td>46</td>
-                    <td>50</td>
-                    <td>188</td>
+                    <td>30</td>
+                    <td>40</td>
+                    <td>35</td>
+                    <td>30</td>
+                    <td>135</td>
                 </tr>
             </table>
         </div>
@@ -164,11 +164,11 @@
                 </tr>
                 <tr>
                     <td>BS Criminology</td>
-                    <td>49</td>
-                    <td>48</td>
-                    <td>46</td>
-                    <td>44</td>
-                    <td>187</td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>30</td>
+                    <td>40</td>
+                    <td>115</td>
                 </tr>
             </table>
         </div>
@@ -189,35 +189,35 @@
                 </tr>
                 <tr>
                     <td>BSED Mathematics</td>
-                    <td>49</td>
-                    <td>48</td>
-                    <td>46</td>
-                    <td>44</td>
-                    <td>187</td>
+                    <td>15</td>
+                    <td>45</td>
+                    <td>25</td>
+                    <td>35</td>
+                    <td>120</td>
                 </tr>
                 <tr>
                     <td>BSED English</td>
-                    <td>43</td>
-                    <td>49</td>
-                    <td>46</td>
-                    <td>50</td>
-                    <td>188</td>
+                    <td>40</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>110</td>
                 </tr>
                 <tr>
                     <td>BSED Filipino</td>
-                    <td>49</td>
-                    <td>48</td>
-                    <td>46</td>
-                    <td>44</td>
-                    <td>187</td>
+                    <td>45</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>25</td>
+                    <td>100</td>
                 </tr>
                 <tr>
                     <td>Bachelor in Elem. Education</td>
-                    <td>49</td>
-                    <td>48</td>
-                    <td>46</td>
-                    <td>44</td>
-                    <td>187</td>
+                    <td>35</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>100</td>
                 </tr>
             </table>
         </div>
@@ -236,43 +236,43 @@
                 </tr>
                 <tr>
                     <td>BS Mechanical Engineering</td>
-                    <td>49</td>
-                    <td>48</td>
-                    <td>46</td>
-                    <td>44</td>
-                    <td>187</td>
+                    <td>25</td>
+                    <td>45</td>
+                    <td>45</td>
+                    <td>40</td>
+                    <td>155</td>
                 </tr>
                 <tr>
                     <td>BS Electrical Engineering</td>
-                    <td>43</td>
-                    <td>49</td>
-                    <td>46</td>
-                    <td>50</td>
-                    <td>188</td>
+                    <td>20</td>
+                    <td>40</td>
+                    <td>45</td>
+                    <td>35</td>
+                    <td>140</td>
                 </tr>
                 <tr>
                     <td>BS Civil Engineering</td>
-                    <td>43</td>
-                    <td>49</td>
-                    <td>46</td>
-                    <td>50</td>
-                    <td>188</td>
+                    <td>20</td>
+                    <td>40</td>
+                    <td>45</td>
+                    <td>35</td>
+                    <td>140</td>
                 </tr>
                 <tr>
                     <td>BS Electronics Engineering</td>
-                    <td>43</td>
-                    <td>49</td>
-                    <td>46</td>
-                    <td>50</td>
-                    <td>188</td>
+                    <td>25</td>
+                    <td>45</td>
+                    <td>45</td>
+                    <td>40</td>
+                    <td>155</td>
                 </tr>
                 <tr>
                     <td>BS Computer Engineering</td>
-                    <td>43</td>
-                    <td>49</td>
-                    <td>46</td>
-                    <td>50</td>
-                    <td>188</td>
+                    <td>30</td>
+                    <td>45</td>
+                    <td>40</td>
+                    <td>35</td>
+                    <td>150</td>
                 </tr>
             </table>
         </div>
@@ -291,27 +291,27 @@
                 </tr>
                 <tr>
                     <td>BSBA Marketing Management</td>
-                    <td>49</td>
-                    <td>48</td>
-                    <td>46</td>
-                    <td>44</td>
-                    <td>187</td>
+                    <td>35</td>
+                    <td>25</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>110</td>
                 </tr>
                 <tr>
                     <td>BSBA Operation Management</td>
-                    <td>43</td>
-                    <td>49</td>
-                    <td>46</td>
-                    <td>50</td>
-                    <td>188</td>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>15</td>
+                    <td>25</td>
+                    <td>90</td>
                 </tr>
                 <tr>
                     <td>BSBA Financial Management</td>
-                    <td>49</td>
-                    <td>48</td>
-                    <td>46</td>
-                    <td>44</td>
-                    <td>187</td>
+                    <td>25</td>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>100</td>
                 </tr>
             </table>
         </div>
