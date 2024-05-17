@@ -18,9 +18,8 @@ Route::get('/score', [ChartController::class, 'index']);
 
 Route::get('/cut-off', [CutOffController::class, 'index']);
 
-Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
-Route::post('/login', [AuthController::class, 'login'])->name('login.custom');
-Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::post('/login', [LoginController::class, 'login'])->name('login.custom');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout')->middleware('auth');
 
 Route::get('/record', [RecordController::class, 'showRecordForm']);
 Route::post('/record', [RecordController::class, 'store'])->name('record.store');
@@ -43,8 +42,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // Routes that require authentication
-Route::middleware('auth')->group(function () {
-
+Route::group(['middleware' => ['auth.redirect']], function () {
     Route::get('/index', [TakerScoreController::class, 'index'])->name('index');
 
     Route::get('/edit/{id}', function ($id) {

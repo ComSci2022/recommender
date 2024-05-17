@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\TakerScore;
+use App\Models\Course;
 use Illuminate\Http\Request;
 
 class TakerScoreController extends Controller
@@ -94,42 +95,23 @@ class TakerScoreController extends Controller
             return redirect()->back()->with('error', 'Taker not found.');
         }
 
-        $totalScore = $takerScore->totalscore;
+        // Fetch courses matching criteria
+        $matchedCourses = Course::where('linguistics', '<=', $takerScore->linguistics)
+            ->where('mathematics', '<=', $takerScore->mathematics)
+            ->where('science', '<=', $takerScore->science)
+            ->where('aptitude', '<=', $takerScore->aptitude)
+            ->orderBy('total_score', 'desc')
+            ->take(3) // Limit to 3 recommendations
+            ->get();
 
-        $courses = [
-            'AB English Language' => 115,
-            'AB Political Science' => 95,
-            'AB Filipino' => 105,
-            'BS Computer Science' => 145,
-            'BS Information Technology' => 135,
-            'BS Criminology' => 115,
-            'BSED Mathematics' => 120,
-            'BSED English' => 110,
-            'BSED Filipino' => 100,
-            'Bachelor in Elementary Education' => 100,
-            'BS Mechanical Engineering' => 155,
-            'BS Electrical Engineering' => 140,
-            'BS Civil Engineering' => 140,
-            'BS Electronics Engineering' => 155,
-            'BS Computer Engineering' => 150,
-            'BSBA Marketing Management' => 110,
-            'BSBA Operation Management' => 90,
-            'BSBA Financial Management' => 100,
-        ];
-
-        // Sort courses by their minimum total scores in descending order
-        arsort($courses);
-
-        $recommendations = [];
-        foreach ($courses as $course => $minScore) {
-            if ($totalScore >= $minScore) {
-                $recommendations[] = $course;
-            }
+        // Check if any courses were found
+        if ($matchedCourses->isEmpty()) {
+            return view('score', compact('takerScore'))->with('error', 'No recommendations found.');
         }
 
-        $recommendations = array_slice($recommendations, 0, 3); // Get the top 3 recommendations
+        // Fetch course names for the matched courses
+        $courseNames = $matchedCourses->pluck('course_name');
 
-        return view('score', compact('takerScore', 'recommendations'));
+        return view('score', compact('takerScore', 'courseNames'));
     }
-
 }

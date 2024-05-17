@@ -53,12 +53,20 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <div class="container">
         <div class="options">
-            <h1>Course Recommendations:</h1>
-            @foreach($recommendations as $key => $recommendation)
-            @if($loop->index < 3)
-            <h3>Recommendation #{{ $loop->index + 1 }}: {{ $recommendation }}</h3>
+                <p>Taker ID: {{ $takerScore->taker_id }}</p>
+                <p>Student Name: {{ $takerScore->lname }}, {{ $takerScore->fname }} {{ $takerScore->mid_ini }}.</p>
+                <p>Linguistics: {{ $takerScore->linguistics }}</p>
+                <p>Mathematics: {{ $takerScore->mathematics }}</p>
+                <p>Science: {{ $takerScore->science }}</p>
+                <p>Aptitude: {{ $takerScore->aptitude }}</p>
+            <h3>Course Recommendations:</h3>
+            @if(isset($courseNames) && count($courseNames) > 0)
+                @foreach($courseNames as $key => $courseName)
+                    <h4>Recommendation #{{ $key + 1 }}: {{ $courseName }}</h4>
+                @endforeach
+            @else
+                <h3>No recommendations found.</h3>
             @endif
-            @endforeach
             <button onclick="window.location.href='/results'">Check Again</button>
         </div>
         <div class="chart-container">

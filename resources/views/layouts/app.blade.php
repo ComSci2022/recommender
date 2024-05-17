@@ -44,6 +44,12 @@
                 <li class="nav-item">
                     <a class="nav-link btn" href="{{ route('takerscores.create') }}">Add New Taker</a>
                 </li>
+                <li class="nav-item">
+                <form action="{{ route('logout') }}" method="POST">
+                    @csrf
+                    <button type="submit" class="nav-link btn">Logout</button>
+                </form>
+                </li>
             </ul>
         </div>
     </nav>
