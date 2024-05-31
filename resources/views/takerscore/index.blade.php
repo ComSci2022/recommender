@@ -15,6 +15,9 @@
                     <th>Science</th>
                     <th>Aptitude</th>
                     <th>Total Score</th>
+                    <th>First Choice</th>
+                    <th>Second Choice</th>
+                    <th>Third Choice</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -30,6 +33,9 @@
                         <td>{{ $takerScore->science }}</td>
                         <td>{{ $takerScore->aptitude }}</td>
                         <td>{{ $takerScore->total_score }}</td>
+                        <td>{{ $takerScore->first_choice }}</td>
+                        <td>{{ $takerScore->second_choice }}</td>
+                        <td>{{ $takerScore->third_choice }}</td>
                         <td>
                             <a href="{{ route('takerscores.edit', ['takerScore' => $takerScore->taker_id]) }}"><button type="submit">Edit</button></a>
                             <form action="{{ route('takerscores.destroy', ['takerScoreId' => $takerScore->taker_id]) }}" method="POST">

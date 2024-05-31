@@ -40,6 +40,18 @@ Create A Taker Score
             <label for="aptitude" class="form-label">Aptitude:</label>
             <input type="text" name="aptitude" class="form-control">
         </div>
+        <div class="mb-3">
+            <label for="first_choice" class="form-label">First Choice:</label>
+            <input type="text" name="first_choice" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="second_choice" class="form-label">Second Choice:</label>
+            <input type="text" name="second_choice" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="third_choice" class="form-label">Third Choice:</label>
+            <input type="text" name="third_choice" class="form-control">
+        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 @endsection
